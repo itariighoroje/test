@@ -1,0 +1,22 @@
+﻿
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildOutputDir>build</BuildOutputDir>
+  </PropertyGroup>
+
+  <Target Name="Clean">
+    <RemoveDir Directories="$(BuildOutputDir)" />
+  </Target>
+
+  <Target Name="Build" DependsOnTargets="Clean">
+    <Message Text="Building the project" />
+    <MSBuild Projects="$(MSBuildProjectName).csproj" Targets="Build" />
+  </Target>
+
+  <Target Name="DisplayVars">
+    <Message Text="VSToolsPath: $(VSToolsPath)" />
+    <Message Text="MSBuildBinPath: $(MSBuildBinPath)" />
+    <Message Text="MSBuildExtensionsPath32: $(MSBuildExtensionsPath32)" />
+    <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)" />
+  </Target>
+</Project>

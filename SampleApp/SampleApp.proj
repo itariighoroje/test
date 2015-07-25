@@ -18,5 +18,7 @@
     <Message Text="MSBuildBinPath: $(MSBuildBinPath)" />
     <Message Text="MSBuildExtensionsPath32: $(MSBuildExtensionsPath32)" />
     <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)" />
+    <Message Text="MSBuildToolsVersion: $(MSBuildToolsVersion)" />
+    <Message Text="MSBuildVersion: $(MSBuildVersion)" />
   </Target>
 </Project>
